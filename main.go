@@ -40,6 +40,8 @@ func getIndexerStatus(url string) {
 
 			if err != nil {
 				log.Println(err)
+				time.Sleep(30 * time.Second)
+				continue
 			}
 
 			body, _ := ioutil.ReadAll(resp.Body)
