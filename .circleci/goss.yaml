@@ -1,0 +1,3 @@
+http:
+  http://127.0.0.1:7392/metrics:
+    status: 200
